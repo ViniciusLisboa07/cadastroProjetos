@@ -8,7 +8,7 @@ console.log(process.env.DATABASE)
 mongoose.Promise = global.Promise;
  
 mongoose.connection.on('error', (error) => {
-    console.error("ERRO: "+error.message);
+    console.error("ERRO: " + error.message);
 });
 
 
