@@ -1,0 +1,1 @@
+exports.defaultPageTitle = "Cadastro de Projetos!!"
