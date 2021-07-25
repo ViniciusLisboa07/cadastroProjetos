@@ -1,0 +1,37 @@
+{{> header}}
+
+<div class="d-flex align-items-center justify-content-center" id="corpo">
+
+    <div class="card w-50 m-5">
+        <div class="card-body">
+            <h4>{{project.title}}</h4>
+            <label>Data de início</label>
+            <p>{{project.startDate}}</p>
+            <label>Data de fim</label>
+            <p>{{project.endDate}}</p>
+            <hr>
+            <div>
+                {{#activities}}
+
+                <label>
+                    {{#finalized}}
+                        <input type="checkbox" name={{title}} checked/>
+                    {{/finalized}}
+                    {{^finalized}}
+                        <input type="checkbox" name={{title}}/>
+                    {{/finalized}}
+                    {{title}}
+                </label>
+                {{/activities}}
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="http://localhost:7777/public/assets/js/project.js"></script>
+
+</body>
+
+</html>

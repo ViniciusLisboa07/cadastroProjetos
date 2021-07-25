@@ -46,10 +46,11 @@ createProject.onclick = () => {
     var project = {
         title: projectName.value,
         startDate: startDateProject.value,
-        endDate: endDateProject.value
+        endDate: endDateProject.value,
+        conclusionPercent: 0
     }
     
-    
+
     $.post("/register", { project, ativityList}, () => {
         window.location.href = '/'
     });

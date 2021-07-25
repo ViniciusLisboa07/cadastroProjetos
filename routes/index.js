@@ -20,11 +20,7 @@ router.post('/register', registerController.registerAction);
 router.get('/projects', projectsController.index)
 
 // ver projeto
-router.get('/projects/:slug', (req, res) => {
-    let slug = req.params.slug;
-
-    res.send('ID do projeto: ' + slug)
-});
+router.get('/projects/:slug', projectsController.slug);
 
 
 module.exports = router;

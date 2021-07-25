@@ -3,15 +3,15 @@ const Project = mongoose.model('Project');
 const Activity = mongoose.model('Activity');
  
 exports.register = (req, res) => {
-    res.render('register');
+    res.render('register'); 
 }; 
-    
 
 exports.registerAction = async (req, res) => {
     //cria o projeto 
     const project = new Project(req.body.project);
     await project.save();
     
+
     //cria as atividades do projeto
     for(let i = 0; i < req.body.ativityList.length ; i++){
         const activity = new Activity({
