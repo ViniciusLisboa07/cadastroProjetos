@@ -1,0 +1,30 @@
+{{> header}}
+
+
+<div class="d-flex align-items-center justify-content-center" id="corpo">
+    <div class="card w-50 m-5">
+        <div class="card-body">
+            <div class="form-group">
+                <form method="POST" action="/register">
+                    <label for="projectName">Nome do projeto</label>
+                    <input inputmode="none" type="text" id="projectName" name="projectName" class="form-control" required="true">
+                    <br />
+                    <label for="startDate">Data de Inicio</label>
+                    <input inputmode="none" type="date" id="startDate" name="startDate" class="form-control" required="true">
+                    <br />
+                    
+                    <label for="endDate">Data de fim</label>
+                    <input inputmode="none" type="date" id="endDate" name="endDate" class="form-control" required="true">
+                    
+                    <input type="submit" class="mt-4 btn btn-primary btn-lg" id="btnFalar" value="Enviar">
+                </form>
+
+                {{! <form method="POST" action="/register">
+                    <input type="text" />
+                    <input type="submit" />
+                </form> }}
+            </div>
+
+        </div>
+    </div>
+</div>

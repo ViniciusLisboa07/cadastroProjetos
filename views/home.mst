@@ -1,3 +1,19 @@
 {{> header}}
 
-<h1>Hello World Mustache :)</h1>
+<div class="d-flex align-items-center justify-content-center" id="corpo">
+  
+    <div class="card w-50 m-5">
+        <div class="card-body">
+            <a href="/register">Cadastrar novo projeto</a>
+        </div>
+        
+    </div>
+    <div class="card w-50 m-5">
+        <div class="card-body">
+            <a href="/projects">Listar de Projetos</a>
+        </div>
+        
+    </div>
+
+   
+</div>

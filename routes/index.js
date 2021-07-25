@@ -1,6 +1,7 @@
-const express = require('express');
+const express = require('express'); 
 
 const homeController = require('../controllers/homeController');
+const registerController = require('../controllers/registerController');
 
 const router = express.Router();
 
@@ -9,10 +10,9 @@ const router = express.Router();
 // home
 router.get('/', homeController.index)
 
-// 
-router.get('/register', (req, res) => {
-    res.send('hello world')
-})
+// cadastrar novo projeto
+router.get('/register', registerController.register);
+router.post('/register', registerController.registerAction);
 
 // lista projetos
 router.get('/projects', (req, res) => {
@@ -24,7 +24,7 @@ router.get('/projects/:id', (req, res) => {
     let id = req.params.id;
 
     res.send('ID do projeto: ' + id)
-})
+});
 
 
 module.exports = router;

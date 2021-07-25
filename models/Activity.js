@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-
+ 
 const activitiesSchema = new mongoose.Schema({
     projectId:{
         type: Number,
         required:true
-    },
+    }, 
     title: {
         type:String,
         trim:true,
