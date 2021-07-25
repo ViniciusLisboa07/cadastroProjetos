@@ -1,16 +1,16 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
- 
+  
 const activitiesSchema = new mongoose.Schema({
-    projectId:{
-        type: Number,
+    projectId:{ 
+        type: Number, 
         required:true
     }, 
-    title: {
+    title: {   
         type:String,
         trim:true,
         required:true
-    },
+    }, 
     startDate: {
         type:Date,
         required:true

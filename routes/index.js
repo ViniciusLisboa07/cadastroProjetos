@@ -5,7 +5,7 @@ const registerController = require('../controllers/registerController');
 
 const router = express.Router();
 
-// rotas
+// rotas 
 
 // home
 router.get('/', homeController.index)
