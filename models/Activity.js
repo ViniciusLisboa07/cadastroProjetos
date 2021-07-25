@@ -3,11 +3,11 @@ mongoose.Promise = global.Promise;
   
 const activitiesSchema = new mongoose.Schema({
     projectId:{ 
-        type: Number, 
+        type: mongoose.ObjectId, 
         required:true
     }, 
     title: {   
-        type:String,
+        type:String, 
         trim:true,
         required:true
     }, 

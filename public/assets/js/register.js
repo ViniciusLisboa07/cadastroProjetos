@@ -41,17 +41,17 @@ addActivity.onclick = () =>{
     endDateActivity.value = "";
 };
 
-createProject.onclik = () => {
+createProject.onclick = () => {
+    
+    var project = {
+        title: projectName.value,
+        startDate: startDateProject.value,
+        endDate: endDateProject.value
+    }
+    
+    
+    $.post("/register", { project, ativityList}, () => {
+        window.location.href = '/'
+    });
     console.log('234234')
-
-    // var project = {
-    //     title: projectName.value,
-    //     startDate: startDateProject.value,
-    //     endDate: endDateProject.value
-    // }
-
-
-    console.log('567467456')
-    // $.post("/register", { project, ativityList}, () => {
-    // });
 }

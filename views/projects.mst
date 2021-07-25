@@ -1,0 +1,20 @@
+{{> header}}
+
+<h3>Projetos criados</h3>
+<hr>
+<div class="d-flex align-items-center justify-content-center" id="corpo">
+  
+
+    {{#projects}}
+        <div class="card w-50 m-5">
+            <div class="card-body">
+                <h4><a href="/projects/{{slug}}">{{title}}</a></h4>
+                <label>Data de início</label>
+                <p>{{startDate}}</p>
+                <label>Data de fim</label>
+                <p>{{endDate}}</p>
+            </div>
+        </div>
+    {{/projects}}
+   
+</div>
