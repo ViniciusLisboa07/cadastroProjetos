@@ -15,15 +15,17 @@
 
                 <label>
                     {{#finalized}}
-                        <input type="checkbox" name={{title}} checked/>
+                        <input class="inputFinalized" type="checkbox" name={{title}} value={{_id}} checked/>
                     {{/finalized}}
+
                     {{^finalized}}
-                        <input type="checkbox" name={{title}}/>
+                        <input class="inputFinalized" type="checkbox" name={{title}}  value={{_id}} />
                     {{/finalized}}
                     {{title}}
                 </label>
                 {{/activities}}
             </div>
+            <button class="btn btn-primary" id="saveChanges">Salvar alterações</button>
         </div>
     </div>
 

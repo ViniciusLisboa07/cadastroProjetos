@@ -20,6 +20,9 @@ const projectSchema = new mongoose.Schema({
     conclusionPercent: {
         type:Number,
         required:true
+    },
+    late: {
+        type:Boolean
     }
 });
 

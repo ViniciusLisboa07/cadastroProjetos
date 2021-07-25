@@ -21,9 +21,13 @@ exports.registerAction = async (req, res) => {
             endDate: req.body.ativityList[i].endDate,
             finalized: false
         });
+
+        if(activity.endDate > project.endDate){
+            const updateProject = await Project.findOneAndUpdate({ _id: project._id }, { late: true });
+        }
         await activity.save();
     }    
 
-    req.flash('success', 'Projeto criado com sucesso!');
-    res.redirect('/');
+
+    // res.redirect('/');
 };

@@ -8,7 +8,7 @@ const router = express.Router();
 
 // rotas 
 
-// home
+// home 
 router.get('/', homeController.index)
 
 // cadastrar novo projeto
@@ -21,6 +21,7 @@ router.get('/projects', projectsController.index)
 
 // ver projeto
 router.get('/projects/:slug', projectsController.slug);
+router.post('/projects/:slug', projectsController.slugAction);
 
 
 module.exports = router;

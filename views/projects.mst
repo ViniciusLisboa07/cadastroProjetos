@@ -2,11 +2,23 @@
 
 <h3>Projetos criados</h3>
 <hr>
-<div class="d-flex align-items-center justify-content-center" id="corpo">
-  
 
-    {{#projects}}
-        <div class="card w-50 m-5">
+{{#flashes}}
+{{#success}}
+<div class="card text-white bg-success mb-3" style="max-width: 18rem;">{{.}}</div>
+{{/success}}
+{{#error}}
+<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">{{.}}</div>
+{{/error}}
+{{#info}}
+<div class="card text-white bg-warning mb-3" style="max-width: 18rem;">{{.}}</div>
+{{/info}}
+{{/flashes}}
+
+<div class="d-flex" id="corpo">
+    <div class="card-columns">
+        {{#projects}}
+        <div class="card w-100">
             <div class="card-body">
                 <h4><a href="/projects/{{slug}}">{{title}}</a></h4>
                 <label>Data de início</label>
@@ -16,9 +28,20 @@
             </div>
             <div class="card-footer">
                 <label>Porcentagem de conclusão</label>
-                <p>{{}}</p>
+                <p>{{conclusionPercent}}%</p>
+                <br />
+                {{#late}}
+                    <label>Atrasado:</label>
+                    <p>Sim</p>
+                {{/late}}
+                {{^late}}
+                    <label>Atrasado:</label>
+                    <p>Não</p>
+                {{/late}}
             </div>
         </div>
     {{/projects}}
+    </div>
+   
    
 </div>
