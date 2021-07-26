@@ -50,7 +50,11 @@
                 <button class="btn btn-primary" id="createProject">Criar Projeto</button>
             </div>
         </div>
+        <div class="pl-2" id="errors">
+
+        </div>
     </div>
+   
     <div class="modal fade" id="atividadeModal">
         <div class="modal-dialog">
             <div class="modal-content">

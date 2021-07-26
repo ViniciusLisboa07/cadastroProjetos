@@ -1,6 +1,6 @@
 {{> header}}
 
-<h3>Projetos criados</h3>
+<a class="h5 p-2">Projetos criados</a>
 <hr>
 
 {{#flashes}}
@@ -15,10 +15,10 @@
 {{/info}}
 {{/flashes}}
 
-<div class="d-flex" id="corpo">
+<div class="d-flex p-3" id="corpo">
     <div class="card-columns">
         {{#projects}}
-        <div class="card w-100">
+        <div class="card w-80">
             <div class="card-body">
                 <h4><a href="/projects/{{slug}}">{{title}}</a></h4>
                 <label>Data de início</label>
@@ -27,21 +27,17 @@
                 <p>{{endDate}}</p>
             </div>
             <div class="card-footer">
-                <label>Porcentagem de conclusão</label>
-                <p>{{conclusionPercent}}%</p>
-                <br />
+                <label>Porcentagem de conclusão {{conclusionPercent}}%</label>
                 {{#late}}
-                    <label>Atrasado:</label>
-                    <p>Sim</p>
+                <a class="text-danger">Atrasado: Sim</a>
                 {{/late}}
                 {{^late}}
-                    <label>Atrasado:</label>
-                    <p>Não</p>
+                <a class="text-success">Atrasado: Não</a>
                 {{/late}}
             </div>
         </div>
-    {{/projects}}
+        {{/projects}}
     </div>
-   
-   
+
+
 </div>

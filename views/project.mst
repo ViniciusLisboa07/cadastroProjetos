@@ -10,19 +10,20 @@
             <label>Data de fim</label>
             <p>{{project.endDate}}</p>
             <hr>
-            <div>
+            <div class="d-flex flex-wrap">
                 {{#activities}}
+                <div class="card m-3 p-2"  style="width: 10rem;">
+                    <label>
+                        {{#finalized}}
+                            <input class="inputFinalized" type="checkbox" name={{title}} value={{_id}} checked/>
+                        {{/finalized}}
 
-                <label>
-                    {{#finalized}}
-                        <input class="inputFinalized" type="checkbox" name={{title}} value={{_id}} checked/>
-                    {{/finalized}}
-
-                    {{^finalized}}
-                        <input class="inputFinalized" type="checkbox" name={{title}}  value={{_id}} />
-                    {{/finalized}}
-                    {{title}}
-                </label>
+                        {{^finalized}}
+                            <input class="inputFinalized" type="checkbox" name={{title}}  value={{_id}} />
+                        {{/finalized}}
+                        {{title}}
+                    </label>
+                </div>
                 {{/activities}}
             </div>
             <button class="btn btn-primary" id="saveChanges">Salvar alterações</button>

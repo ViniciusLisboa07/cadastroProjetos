@@ -15,7 +15,7 @@ saveChanges.onclick = () => {
         arrayInputList.push(element)
     }
 
-    $.post(window.location, {arrayInputList}, function() {
+    $.post(window.location, {arrayInputList}, () => {
         window.location.href = '/'
     });
 };
