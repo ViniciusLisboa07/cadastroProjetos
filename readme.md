@@ -17,3 +17,7 @@ Clicando em cadastrar é possivel efetuar um novo cadastro, sendo necessário pr
 ![print](https://github.com/ViniciusLisboa07/cadastroProjetos/blob/main/prints/Screenshot_2.png)
 ![print](https://github.com/ViniciusLisboa07/cadastroProjetos/blob/main/prints/Screenshot_3.png)
 ![print](https://github.com/ViniciusLisboa07/cadastroProjetos/blob/main/prints/Screenshot_4.png)
+
+Ao criar um novo projeto o usuário será redirecionado para a home, navegando até a listagem de Porjetos é possivel ver todos os projetos já criados, sua porcentagem de conclusão e se está ou não atrasado
+
+![print](https://github.com/ViniciusLisboa07/cadastroProjetos/blob/main/prints/Screenshot_5.png)
