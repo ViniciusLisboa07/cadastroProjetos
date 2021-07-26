@@ -21,3 +21,8 @@ Clicando em cadastrar é possivel efetuar um novo cadastro, sendo necessário pr
 Ao criar um novo projeto o usuário será redirecionado para a home, navegando até a listagem de Porjetos é possivel ver todos os projetos já criados, sua porcentagem de conclusão e se está ou não atrasado
 
 ![print](https://github.com/ViniciusLisboa07/cadastroProjetos/blob/main/prints/Screenshot_5.png)
+
+Clicando em um dos projetos é possivel verificar suas atividades com mais detalhes, além de marca-lás como concluidas(isso irá alterar a porcentagem da conclusão)
+
+![print](https://github.com/ViniciusLisboa07/cadastroProjetos/blob/main/prints/Screenshot_6.png)
+![print](https://github.com/ViniciusLisboa07/cadastroProjetos/blob/main/prints/Screenshot_7.png)
