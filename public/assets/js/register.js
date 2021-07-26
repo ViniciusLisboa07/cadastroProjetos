@@ -41,7 +41,7 @@ addActivity.onclick = () =>{
     endDateActivity.value = "";
 };
  
-createProject.onclick = () => {
+createProject.onclick = function() {
     
     errors.removeChild(errors.childNodes[0])
 
@@ -57,10 +57,10 @@ createProject.onclick = () => {
         error.innerHTML = 'Preencha todos os campos!';
         error.style.color = "red";
         errors.appendChild(error);
+    }else{
+        $.post("/register", { project, ativityList});
+        window.location.href = "/";
     }
-
-    $.post("/register", { project, ativityList}, () => {
-        window.location.href = '/'
-    });
+    
     console.log(projectName.value)
 }

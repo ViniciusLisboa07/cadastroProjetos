@@ -23,6 +23,11 @@
                         {{/finalized}}
                         {{title}}
                     </label>
+                    <label class="text-dark">Data de inicio</label>
+                    <a>{{startDate}}</a>
+                    <br>
+                    <label class="text-dark">Data de fim</label>
+                    <a>{{endDate}}</a>
                 </div>
                 {{/activities}}
             </div>

@@ -1,7 +1,7 @@
 var saveChanges = document.getElementById("saveChanges");
 var inputList = document.getElementsByClassName("inputFinalized");
 
-saveChanges.onclick = () => {
+saveChanges.onclick =  () => {
 
     const array = Array.from(inputList)
     var arrayInputList = [];
@@ -15,7 +15,7 @@ saveChanges.onclick = () => {
         arrayInputList.push(element)
     }
 
-    $.post(window.location, {arrayInputList}, () => {
-        window.location.href = '/'
-    });
+     $.post(window.location, {arrayInputList});
+
+    window.location.href = '/'
 };
